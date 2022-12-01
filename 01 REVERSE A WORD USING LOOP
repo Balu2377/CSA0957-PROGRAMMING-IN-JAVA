@@ -1,33 +1,15 @@
 import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        String str;
-        boolean ch = true;
-        Scanner obj = new Scanner(System.in);
-
-        System.out.println("Enter the strings to be reversed :");
-        str = obj.nextLine();
-        char[] chars = str.toCharArray();
-        for (char c : chars) {
-            if (Character.isAlphabetic(c)) {
-                ch = true;
-            } 
-            else if (Character.isSpaceChar(c)) {
-                continue;
-            } 
-            else {
-                ch = false;
-                break;
-            }
-        }
-        if (ch == true) {
-            for (int i = str.length() - 1; i >= 0; i--) {
-                System.out.print(str.charAt(i));
-            }
-        } else {
-            System.out.println("Invalid Input....");
-        }
-
-    }
+public class reverse
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the string");
+String n=sc.nextLine();
+char a[]=n.charAt();
+for(int i=0;i<length-1;i--)
+{
+System.out.println(a[i]);
+}
+}
 }
